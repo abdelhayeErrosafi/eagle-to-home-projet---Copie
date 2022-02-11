@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>S'inscrire</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a id="l" href="home.html" class="logo"><h3><span>E</span>AGLE <span>T</span>o <span>H</span>ome </h3><img id="img" src="logo1.jpg" alt=""></a>
+        </div>
+    </header>
+    <section class="form">
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#000" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,256C672,277,768,299,864,282.7C960,267,1056,213,1152,192C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+        <div class="contenu">
+            <h3><span>S</span>'inscrire</h3>
+            <table>
+                <tr>
+                    <td><label for="txt-nom">Nom :</label></td>
+                    <td><input type="text" id="txt-nom"></td>
+                </tr>
+                <tr>
+                    <td><label for="txt-prenom">Prenom :</label></td>
+                    <td><input type="text" id="txt-prenom"></td>
+                </tr>
+                <tr>
+                     <td><label for="txtnom">Surnom :</label></td>
+                     <td><input type="text" name="" id="txtnom" placeholder="entrez un surnom"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Tele :</label></td>
+                    <td><input type="tel" id="txt-tel"></td>
+                </tr>
+                <tr>
+                    <td><label for="mail">Email :</label></td>
+                    <td><input type="mail" id="mail" placeholder="entrez un valide email"></td>
+                </tr>
+                <tr>
+                    <td><label for="txtmdp">Mot de passe :</label></td>
+                    <td><input type="text" id="txtmdp" placeholder="saisie votre mot de passe"></td>
+                </tr>
+                <tr>
+                    <td><label for="txtcmdp">Confirmer mot de passe :</label></td>
+                    <td><input type="text" name="" id="txtcmdp" placeholder="confirmer le mot de passe"></td>
+                </tr>
+            </table>
+            <div class="btn">
+                 <input type="button" id="btn-cnf" value="S'inscrire">
+            </div>
+            <div class="nav">
+                <h6>go back to <a href="home.html">HOME</a></h6>
+                <h6><a href="seconect.html">SE CONNECTER</a></h6>
+            </div>
+        </div>
+    </section>
+    <section class="fot">
+        <div>
+            <p>Tous les droits sont reserve.creer et disigner par <a href="https://www.instagram.com/ws_abdo.err/?hl=fr">AdoCreate</a></p>
+        </div>
+    </section>
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+            const header =document.querySelector('header');
+            header.classList.toggle("sticky",window.scrollY > 0);
+        });
+    </script>
+</body>
+</html>
